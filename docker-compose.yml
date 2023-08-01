@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  svc1:
+    image: sunxufei/img1
+    ports:
+      - "3001:3000"
+  svc2:
+    image: sunxufei/img2
+    ports:
+      - 3000
+    deploy:
+      mode: replicated
+      replicas: 2
+      
